@@ -220,7 +220,6 @@
     audacity
     ffmpeg
     ydotool
-    unityhub
     libreoffice-fresh
     obsidian
     mpv-unwrapped
@@ -247,7 +246,6 @@
     zip
     unzip
     foliate
-    gparted
     prismlauncher
     vscodium
     jetbrains.idea
@@ -264,11 +262,9 @@
     openal
     udev
     libglvnd
-    #openjdk21
     stdenv
-    android-studio
     mesa
-    #bottles
+    bottles
     
     # system
     pavucontrol

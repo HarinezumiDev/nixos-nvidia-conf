@@ -7,7 +7,6 @@
     ./kitty.home.nix
     ./yazi.home.nix
     ./btop.home.nix
-    ./gtk.home.nix
   ];
   /*
   home.pointerCursor = {
