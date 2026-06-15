@@ -113,7 +113,6 @@
 
   # Env variables
   environment.variables = {
-    QT_QPA_PLATFORMTHEME = "gtk3";
   };
 
   # docker
