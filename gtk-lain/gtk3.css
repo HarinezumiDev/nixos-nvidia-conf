@@ -1,0 +1,294 @@
+/* lain gtk3 overrides — loaded via home-manager gtk.gtk3.extraCss */
+
+@define-color selected_bg_color    #800d00;
+@define-color selected_fg_color    #e6e4e1;
+@define-color selected_borders_color #642f27;
+@define-color selection_highlight  #800d00;
+
+* {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 10px;
+  outline: none;
+  border-radius: 0;
+}
+
+/* global selection — catches labels, text views, web views, etc */
+*:selected,
+*:selected:focus {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+
+selection {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+
+window, .background {
+  background-color: #262626;
+  color: #bab4ab;
+}
+
+headerbar, .titlebar {
+  background-color: #1a1a1a;
+  color: #bab4ab;
+  border-bottom: 1px solid #262621;
+  padding: 2px 6px;
+  min-height: 24px;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+headerbar .title, .titlebar .title {
+  color: #e6e4e1;
+  font-weight: bold;
+}
+
+headerbar button, .titlebar button {
+  background: none;
+  border: none;
+  color: #555555;
+  padding: 2px 4px;
+  min-height: 0;
+  min-width: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+headerbar button:hover, .titlebar button:hover {
+  background-color: #262621;
+  color: #e6e4e1;
+}
+
+headerbar button:active, .titlebar button:active {
+  color: #da984a;
+}
+
+.csd headerbar { border-radius: 0; }
+
+window.csd {
+  border: 1px solid #642f27;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+menu, .menu, .context-menu {
+  background-color: #262621;
+  border: 1px solid #1a1a1a;
+  padding: 2px 0;
+  border-radius: 0;
+}
+
+menuitem {
+  background-color: transparent;
+  color: #bab4ab;
+  padding: 3px 10px;
+  min-height: 0;
+  border-radius: 0;
+}
+
+menuitem:hover {
+  background-color: #262626;
+  color: #da984a;
+}
+
+menuitem:disabled { color: #555555; }
+
+separator {
+  background-color: #1a1a1a;
+  min-height: 1px;
+  margin: 2px 0;
+}
+
+button {
+  background-color: #262621;
+  color: #bab4ab;
+  border: 1px solid #1a1a1a;
+  padding: 3px 8px;
+  min-height: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+button:hover {
+  background-color: #262626;
+  color: #e6e4e1;
+  border-color: #642f27;
+}
+
+button:active, button:checked {
+  background-color: #800d00;
+  color: #e6e4e1;
+  border-color: #800d00;
+}
+
+button:disabled {
+  background-color: #1a1a1a;
+  color: #555555;
+  border-color: #1a1a1a;
+}
+
+entry {
+  background-color: #262621;
+  color: #e6e4e1;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+  padding: 3px 6px;
+  caret-color: #da984a;
+  box-shadow: none;
+}
+
+entry:focus { border-color: #642f27; }
+
+entry selection {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+
+treeview, listview, list {
+  background-color: #262626;
+  color: #bab4ab;
+  border: none;
+}
+
+treeview:selected,
+treeview:selected:focus,
+listview row:selected,
+listview row:selected:focus,
+list row:selected,
+list row:selected:focus {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+
+treeview:hover, listview row:hover, list row:hover {
+  background-color: #262621;
+}
+
+columnview header button {
+  background-color: #1a1a1a;
+  color: #555555;
+  border: none;
+  border-bottom: 1px solid #1a1a1a;
+  border-radius: 0;
+  padding: 2px 6px;
+}
+
+scrollbar { background-color: #1a1a1a; border: none; }
+
+scrollbar slider {
+  background-color: #642f27;
+  min-width: 4px;
+  min-height: 4px;
+  border-radius: 0;
+  margin: 1px;
+}
+
+scrollbar slider:hover { background-color: #da984a; }
+
+notebook > header {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+  padding: 0;
+}
+
+notebook > header tabs tab {
+  background-color: #1a1a1a;
+  color: #555555;
+  border: none;
+  border-right: 1px solid #1a1a1a;
+  padding: 3px 10px;
+}
+
+notebook > header tabs tab:checked {
+  background-color: #262626;
+  color: #e6e4e1;
+  border-top: 1px solid #da984a;
+}
+
+checkbutton check, radiobutton radio {
+  background-color: #262621;
+  border: 1px solid #1a1a1a;
+  min-width: 12px;
+  min-height: 12px;
+  border-radius: 0;
+}
+
+checkbutton check:checked, radiobutton radio:checked {
+  background-color: #800d00;
+  border-color: #da984a;
+}
+
+progressbar trough {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+  min-height: 4px;
+}
+
+progressbar progress {
+  background-color: #800d00;
+  border-radius: 0;
+}
+
+scale trough {
+  background-color: #1a1a1a;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+}
+
+scale highlight { background-color: #800d00; border-radius: 0; }
+
+scale slider {
+  background-color: #bab4ab;
+  border: 1px solid #642f27;
+  min-width: 8px;
+  min-height: 8px;
+  border-radius: 0;
+}
+
+scale slider:hover { background-color: #da984a; }
+
+tooltip {
+  background-color: #262621;
+  color: #bab4ab;
+  border: 1px solid #1a1a1a;
+  padding: 3px 6px;
+  border-radius: 0;
+}
+
+popover {
+  background-color: #262621;
+  border: 1px solid #1a1a1a;
+  border-radius: 0;
+  padding: 4px;
+}
+
+statusbar {
+  background-color: #1a1a1a;
+  color: #555555;
+  border-top: 1px solid #1a1a1a;
+  font-size: 9px;
+  padding: 1px 6px;
+}
+
+combobox button {
+  background-color: #262621;
+  border: 1px solid #1a1a1a;
+  color: #bab4ab;
+  border-radius: 0;
+}
+
+combobox button:hover {
+  border-color: #642f27;
+  color: #e6e4e1;
+}
+
+infobar {
+  background-color: #1a1a1a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+infobar.info    { border-color: #6f8f35; }
+infobar.warning { border-color: #da984a; }
+infobar.error   { border-color: #800d00; }
