@@ -1,0 +1,172 @@
+/* lain gtk4 overrides — loaded via home-manager gtk.gtk4.extraCss */
+
+* {
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 10px;
+  border-radius: 0;
+}
+
+window, .background {
+  background-color: #262626;
+  color: #bab4ab;
+}
+
+headerbar {
+  background-color: #1a1a1a;
+  color: #bab4ab;
+  border-bottom: 1px solid #262621;
+  min-height: 24px;
+  padding: 2px 6px;
+  box-shadow: none;
+}
+
+headerbar .title { color: #e6e4e1; font-weight: bold; }
+
+headerbar button {
+  background: none;
+  border: none;
+  color: #555555;
+  padding: 2px 4px;
+  min-height: 0;
+  min-width: 0;
+  box-shadow: none;
+}
+
+headerbar button:hover { background-color: #262621; color: #e6e4e1; }
+headerbar button:active { color: #da984a; }
+
+window.csd {
+  border: 1px solid #642f27;
+  box-shadow: none;
+}
+
+button {
+  background-color: #262621;
+  color: #bab4ab;
+  border: 1px solid #1a1a1a;
+  padding: 3px 8px;
+  min-height: 0;
+  box-shadow: none;
+}
+
+button:hover { background-color: #262626; color: #e6e4e1; border-color: #642f27; }
+button:active, button:checked { background-color: #800d00; color: #e6e4e1; border-color: #800d00; }
+button.suggested-action { background-color: #800d00; color: #e6e4e1; border-color: #800d00; }
+button.suggested-action:hover { background-color: #642f27; }
+button.destructive-action { background-color: #800d00; color: #e6e4e1; border-color: #800d00; }
+button:disabled { background-color: #1a1a1a; color: #555555; border-color: #1a1a1a; }
+
+entry {
+  background-color: #262621;
+  color: #e6e4e1;
+  border: 1px solid #1a1a1a;
+  padding: 3px 6px;
+  box-shadow: none;
+}
+
+entry:focus { border-color: #642f27; box-shadow: none; outline: none; }
+/* global selection */
+*:selected,
+*:selected:focus,
+selection {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+
+entry selection { background-color: #800d00; color: #e6e4e1; }
+
+listview, list { background-color: #262626; color: #bab4ab; }
+listview > row, list > row { padding: 3px 6px; }
+listview > row:selected,
+listview > row:selected:focus,
+list > row:selected,
+list > row:selected:focus {
+  background-color: #800d00;
+  color: #e6e4e1;
+}
+listview > row:hover, list > row:hover { background-color: #262621; }
+
+columnview > header > button {
+  background-color: #1a1a1a;
+  color: #555555;
+  border: none;
+  border-bottom: 1px solid #1a1a1a;
+  border-right: 1px solid #1a1a1a;
+  padding: 2px 6px;
+}
+
+scrollbar { background-color: #1a1a1a; }
+
+scrollbar > range > trough > slider {
+  background-color: #642f27;
+  min-width: 4px;
+  min-height: 4px;
+  margin: 1px;
+}
+
+scrollbar > range > trough > slider:hover { background-color: #da984a; }
+
+notebook > header { background-color: #1a1a1a; border-bottom: 1px solid #1a1a1a; }
+notebook > header > tabs > tab { background-color: #1a1a1a; color: #555555; border-right: 1px solid #1a1a1a; padding: 3px 10px; }
+notebook > header > tabs > tab:checked { background-color: #262626; color: #e6e4e1; border-top: 1px solid #da984a; }
+
+popover {
+  background-color: #262621;
+  color: #bab4ab;
+  border: 1px solid #1a1a1a;
+  padding: 4px;
+  box-shadow: none;
+}
+
+popover.menu { padding: 2px 0; }
+popover.menu > contents { padding: 0; }
+
+modelbutton { background-color: transparent; color: #bab4ab; padding: 3px 10px; }
+modelbutton:hover { background-color: #262626; color: #da984a; }
+
+checkbutton > check, radiobutton > radio {
+  background-color: #262621;
+  border: 1px solid #1a1a1a;
+  min-width: 12px;
+  min-height: 12px;
+}
+
+checkbutton > check:checked, radiobutton > radio:checked {
+  background-color: #800d00;
+  border-color: #da984a;
+}
+
+progressbar > trough { background-color: #1a1a1a; border: 1px solid #1a1a1a; min-height: 4px; }
+progressbar > trough > progress { background-color: #800d00; }
+
+scale > trough { background-color: #1a1a1a; border: 1px solid #1a1a1a; }
+scale > trough > highlight { background-color: #800d00; }
+scale > trough > slider { background-color: #bab4ab; border: 1px solid #642f27; min-width: 8px; min-height: 8px; }
+scale > trough > slider:hover { background-color: #da984a; }
+
+tooltip {
+  background-color: #262621;
+  color: #bab4ab;
+  border: 1px solid #1a1a1a;
+  padding: 3px 6px;
+  box-shadow: none;
+}
+
+.sidebar, .navigation-sidebar {
+  background-color: #262621;
+  color: #bab4ab;
+  border-right: 1px solid #1a1a1a;
+}
+
+.sidebar > row:selected, .navigation-sidebar > row:selected {
+  background-color: #262626;
+  color: #da984a;
+}
+
+.card { background-color: #262621; border: 1px solid #1a1a1a; padding: 6px; }
+
+dialog { background-color: #262626; border: 1px solid #642f27; }
+
+actionbar { background-color: #1a1a1a; border-top: 1px solid #1a1a1a; padding: 2px 6px; }
+
+separator { background-color: #1a1a1a; min-width: 1px; min-height: 1px; }

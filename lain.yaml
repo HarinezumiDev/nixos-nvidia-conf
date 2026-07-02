@@ -1,0 +1,37 @@
+scheme: "Lain"
+author: "harinezumi"
+variant: "dark"
+
+# base00 — main background
+base00: "262626"
+# base01 — secondary background (popups, eww)
+base01: "262621"
+# base02 — tertiary background (headers, bars)
+base02: "1a1a1a"
+# base03 — dim text / comments
+base03: "555555"
+# base04 — mid fg
+base04: "8a857e"
+# base05 — main fg
+base05: "bab4ab"
+# base06 — bright fg
+base06: "e6e4e1"
+# base07 — brightest (white)
+base07: "f0ede8"
+
+# base08 — red / errors / destructive
+base08: "800d00"
+# base09 — orange / accent-hi / clock
+base09: "da984a"
+# base0A — yellow (border-hi / active border)
+base0A: "642f27"
+# base0B — green / weather
+base0B: "6f8f35"
+# base0C — cyan (unused, keep neutral)
+base0C: "5a7a6a"
+# base0D — blue (unused, keep neutral)
+base0D: "3a5a6a"
+# base0E — magenta (unused, keep neutral)
+base0E: "5a3a4a"
+# base0F — dark red (cava gradient bottom)
+base0F: "14010f"
