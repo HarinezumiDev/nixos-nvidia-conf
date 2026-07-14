@@ -7,7 +7,7 @@
     prezto.editor.keymap = "vi";
     
     shellAliases = {
-      "rebuild" = "sudo nixos-rebuild switch --flake ~/nixos-config/config/";
+      "rebuild" = "cd $HOME/nixos-config/config && sudo nixos-rebuild switch --flake .#nixos";
     };
     
     history = {

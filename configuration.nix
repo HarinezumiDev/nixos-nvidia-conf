@@ -10,7 +10,7 @@
     ];
 
   # Generation label
-  system.nixos.label = "KDE-NixOS";
+  system.nixos.label = "Nvidia-NixOS";
 
   # Bootloader
   time.hardwareClockInLocalTime = true;
@@ -24,7 +24,7 @@
   ### SYSTEMD ###
   boot.loader.systemd-boot.enable = false;
 
-  networking.hostName = "NixOS";
+  networking.hostName = "I use NixOS btw";
   networking.wireless.enable = true;
 
   home-manager.backupFileExtension = "bak";
@@ -45,8 +45,6 @@
     #windowManager.bspwm.enable = true;
   };
 
-  # kde plasma 6
-  services.desktopManager.plasma6.enable = true;
 
   services.displayManager.sddm.enable = true;
 
@@ -177,7 +175,7 @@
     fastfetch
     cava
     cmus
-    thunar
+    dolphin
 
     
     # rice
